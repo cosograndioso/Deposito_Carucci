@@ -4,3 +4,8 @@ conservare la storia: traccia le modifiche
 branching e merging : ?
 
 gestire i conflitti
+
+
+
+
+le tre regole dell OOP.
