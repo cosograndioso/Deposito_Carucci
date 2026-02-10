@@ -69,7 +69,21 @@ class inventario:
             
             
     
-        
+    def acquista(self):
+        scelta = input("\nCosa desideri acquistare? ")
+        if scelta in self.magazzino:
+            
+            if self.magazzino[scelta]["quantita"] > 0:
+                self.magazzino[scelta]["quantita"] -= 1 # Togliamo un pezzo
+                prezzo = self.magazzino[scelta]["prezzo"]
+                print(f"Hai acquistato {scelta} con successo!")
+                return prezzo 
+            else:
+                print("Spiacenti, articolo esaurito!")
+                return None
+        else:
+            print("Articolo non trovato in inventario.")
+            return None
 
              
             

@@ -18,14 +18,16 @@ Il sistema tiene traccia dei guadagni totali.
 Puoi pre inserire gli amministratori non i clienti
 Il sistema dovrebbe permettere di simulare un'interazione base tra il cliente e il negozio dopo un login e una registrazione, nonché fornire gli strumenti necessari per la manutenzione e l'analisi del negozio da parte degli amministratori.'''
 
-
+from inventario import inventario
 class Utente:
     def __init__(self):
         
         self.utenti_db = {
             "admin": {"password": "123", "ruolo": "admin"}
         }
-        acquisti =[]
+        self.guadagni_totali = 0.0
+    
+    
     def aggiungi_utente(self):
             
         username = input("Scegli un username: ")
@@ -57,10 +59,32 @@ class Utente:
             return None, None
         
         
+    def compra(self, inventario_oggetto, username_attuale):
+        """
+        Riceve l'oggetto inventario e l'utente che sta comprando.
+        """
+       
+        inventario_oggetto.visualizza_inventarioPerUtenti() 
+    
+        prezzo_pagato = inventario_oggetto.acquista()
         
-    def compra(self):
-            
-        pass
+        if prezzo_pagato is not None:
+            self.guadagni_totali += prezzo_pagato
+            self.utenti_db[username_attuale]["acquisti"].append(f"Spesa di {prezzo_pagato}€")
+            print(f"Storico aggiornato per {username_attuale}!")
+        else:
+            print("Nessun acquisto effettuato.")
+    
+    
+    
+    
+    
+    
+    def visualizza_guadagni(self):
+        
+        print(f"\n--- RESOCONTO ECONOMICO ---")
+        print(f"Guadagni totali: {self.guadagni_totali}€")
+        print("---------------------------\n")
     
     
     
