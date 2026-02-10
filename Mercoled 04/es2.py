@@ -5,6 +5,8 @@ eta = int(input("Inserisci la tua età per vedere il film: "))
 stato = "maggiorenne" if eta >= 18 else "minorenne"
 
 
+
+
 match stato:
     case "maggiorenne":
         print("Puoi vedere il film")
@@ -48,7 +50,7 @@ match op:
         
         
 
-#3
+#3 extra
 print("crea il tuo personaggio")
 print("inserisci se sei m o f ")
 risp = input()

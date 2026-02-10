@@ -1,0 +1,6 @@
+git e un sistema di versionamento:
+3 cose 
+conservare la storia: traccia le modifiche
+branching e merging : ?
+
+gestire i conflitti

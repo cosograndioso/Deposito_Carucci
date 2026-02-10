@@ -1,0 +1,29 @@
+-le classi sono la base dell oop possono avere
+attributi 
+metodi normali o speciali (costruttore) e altre classi
+
+-Le classi
+sono un astrazione dei concetti del mondo reale, sono modelli per la cxreazione di oggetti,
+un oggetto e' un 'istanza di una classe
+
+-Attributi sono variabili associate a una classe e rappresentato le proprieta di un oggetto e sono condivisi tra tutti gli oggetti.
+
+-metodi sono funzioni associate a una classe e rappresentato il comportamento di un oggetto.
+
+
+self, init
+
+init e un costruttore o metodo speciale serve per inizializzare loggetto impostando attributi ecc....
+
+tipi di metodi:
+di istanza operano su istanza di un oggetto e accedono ai dati tramite self
+
+di classe operano sulla classe usano il decoratore @classmethod e ricevono come primo parametro la clase cls 
+
+statici
+legate alla classe e non operano ne sull oggetto ne sulla classe e hanno il decoratore @staticmethod
+
+pag 118 117 116
+
+
+Dizionari 
