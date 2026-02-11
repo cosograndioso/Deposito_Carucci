@@ -36,7 +36,7 @@ def login():
     
     
     if username in database_utenti and database_utenti[username]["psw"] == password:
-        return "UTENTE", username # Restituiamo lo username per recuperare il conto dopo
+        return "UTENTE", username 
     
     return None, None
 
