@@ -32,7 +32,7 @@ from teatro import Teatro
 from vip import Vip, PostoStandard
 
 def main():
-    teatro = Teatro("Teatro Apollo")
+    teatro = Teatro("Teatro sburrevolezza")
     
     
     teatro.aggiungi_posto(PostoStandard("1", "A", 10))
