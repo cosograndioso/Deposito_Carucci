@@ -11,7 +11,7 @@ Dare la possibilità all'utente di:
 - eliminare alunni."""
 
 
-FILE_NAME = r"C:\Users\gabriele\Desktop\clone\Deposito_Carucci\18-02/students.csv"
+FILE_NAME = r"18-02/students.csv"
 
 
 # funzioni per scrivere
