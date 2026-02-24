@@ -52,7 +52,7 @@ def Cattura(catch_rate):
 def MettiInSquadra(Pok_Catturato):
     nome_file = "/home/gabriele/Scrivania/Deposito_Carucci/20-02/pokedez.json"
     
-    # 1. Carichiamo la lista esistente
+   
     if os.path.exists(nome_file):
         with open(nome_file, "r") as file:
             try:
@@ -60,19 +60,21 @@ def MettiInSquadra(Pok_Catturato):
             except:
                 lista = []
     else:
-        lista = [] # Se il file non esiste, partiamo da una lista vuota
-    
-    # 2. AGGIUNGIAMO il pokemon catturato alla lista (QUESTO MANCAVA!)
+        lista = [] 
+   
     lista.append(Pok_Catturato)
     
-    # 3. Salviamo la lista aggiornata
+   
     with open(nome_file, "w") as file:
         json.dump(lista, file, indent=4)
  
     return f"Ottimo lavoro! {Pok_Catturato['nome']} è ora nel file JSON."
    
    
-   
+def vediDex():
+    nome_file = "/home/gabriele/Scrivania/Deposito_Carucci/20-02/pokedez.json"
+
+    pass
    
    
 
@@ -109,7 +111,6 @@ if RISS:
         if Cattura(cattura):
             print("Cattura completata!")
             
-            # Creiamo il dizionario con i dati reali del pokemon
             dati_per_pokedex = {
                 "id": identificativo,
                 "nome": nome,
@@ -117,7 +118,6 @@ if RISS:
                 "peso": peso
             }
             
-            # Passiamo i dati alla funzione
             risultato_salvataggio = MettiInSquadra(dati_per_pokedex)
             print(risultato_salvataggio)
             break
