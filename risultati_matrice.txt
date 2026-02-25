@@ -1,0 +1,19 @@
+--- Operazione: Creazione Matrice ---
+[[95  2 81 81]
+ [65 70  5 14]
+ [13 60 82 82]
+ [70 45 62 74]]
+
+--- Operazione: Sotto-matrice centrale ---
+[[70  5]
+ [60 82]]
+
+--- Operazione: Somma elementi ---
+901
+
+--- Operazione: Matrice Trasposta ---
+[[95 65 13 70]
+ [ 2 70 60 45]
+ [81  5 82 62]
+ [81 14 82 74]]
+
