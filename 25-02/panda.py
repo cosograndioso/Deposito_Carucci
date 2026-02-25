@@ -7,6 +7,11 @@ data = {
 'Città': ['Roma', 'Milano', 'Napoli']
 }
 df = pd.DataFrame(data)
+df = df.drop_duplicates()
+
+df_clean = df.dropna()
+
+
 
 # Stampa del DataFrame originale
 print("DataFrame Originale:")
@@ -25,3 +30,4 @@ df['Maggiorenne'] = df['Età'] >= 18
 # Stampa del DataFrame con la nuova colonna
 print("\nDataFrame con colonna 'Maggiorenne':")
 print(df)
+
