@@ -30,9 +30,7 @@ data = {
     'Città': ['Roma', 'Milano', 'Napoli', 'Torino', 'Bari', 'Firenze', 'Roma', 'Milano', 'Napoli', 'Torino', 'Napoli', 'Torino'],
     'Salario': [2500, 3200, 0, 4100, 2900, np.nan, 0, 3500, 2700, 3100, 0, 4100]
 }
-
 df = pd.DataFrame(data)
-
 print("--- Prime 5 righe ---")
 print(df.head(5))
 print("\n--- Ultime 5 righe ---")
@@ -65,10 +63,9 @@ def classifica_eta(eta):
         return "Senior"
 
 df['Categoria Età'] = df['Età'].apply(classifica_eta)
-
 df.to_csv("dataset_persone_pulito.csv", index=False)
 print("\n--- File 'dataset_persone_pulito.csv' salvato con successo ---")
 
-# Visualizzazione finale del risultato
+
 print("\nDataFrame Finale:")
 print(df)
