@@ -1,0 +1,63 @@
+Quali sono le principali caratteristiche di PIP? E cosa vuol dire l'acronimo PIP?
+L'acronimo pip puo' avere due significati principali:
+Pip Installs Packages:  (molto amato nel mondo tech).
+Preferred Installer Program
+Le caratteristiche principali di PiP:
+Installazione e Sorgenti: pip attinge da PYPI ma puo' installare pacchetti anche da github o altre fonti e permette di scegliere una versione specifica o scaricare l'ultima versione uscita.
+Permette anche una gestione Intelligente delle Dipendenze che e' la feature piu' interessante di pip che se per esempio abbiamo bisogno del pacchetto "a" che necessita del pacchetto "b" Pip le installera' entrambi per far funzionare "a" senza che tu debba farlo manualmente.
+Pip Permette anche di fare  Manutenzione (Aggiornamento e Rimozione), portando un pacchetto all'ultima versione con un semplice comando o la diretta rimozione del pacchetto.
+Poi abbiamo anche il controllo delle versioni che ti permette semplicemente di fare un upgrade (passare a una versione piu' recente) o un downgrade (tornare a una precedente).
+Pip e' perfetto per python per un semplice motivo, l'isolamento con l'ambiente virtuale, perche' PIP lavora in perfetta sinergia con strumenti come venv o virtualenv. Questo significa che puoi creare "stanze separate" per ogni tuo progetto.
+
+
+Cosa cambia dalla programmazione OOP alla programmazione per l'analisi dei dati?
+Nella OOP: Ti concentri sul creare modelli del mondo reale. Definisci classi come Cliente o ContoCorrente, con i loro attributi e metodi. Il focus e' l'incapsulamento, ereditarieta', astrazione e la gestione dello stato dell'oggetto.
+Nell'Analisi Dati: Ti concentri sul flusso delle trasformazioni o delle statistiche. Non ti interessa creare una classe per ogni singola riga di un database. Ti interessa come prendere un intero blocco di dati e filtrarlo, aggregarlo o modellarlo.
+
+
+Quali sono i principali obbiettivi/funzionalità di Numpy? Spiegali e fai un esempio
+L'obiettivo primario di NumPy e' superare i limiti delle liste native di Python (ha come obbiettivo l'ottimizzazione delle prestazioni), che sono lente per il calcolo numerico e permette di gestire grandi moli di dati in modo compatto e veloce.
+Oltre al classico accesso agli elementi, NumPy introduce:
+Slicing: 
+Estrarre porzioni di dati (es. una sottomatrice centrale).
+Fancy Indexing: 
+Selezionare elementi usando liste di indici.
+Boolean Masking:
+Filtrare i dati in base a condizioni (es. "prendi tutti i numeri maggiori di 10").
+permette anche di crea strutture dati (ndarray) che occupano meno spazio in memoria e sono molto piu' veloci da elaborare.
+Permette l'integrazione con linguaggi di basso livello come C/C++, fornisce anche una struttura standard per i dati multidimensionali e punta a diventare lo standard per la gestione dei dati complessi ed e' molto versatile e permette di offrire l'oggetto ndarray come strumento universale per rappresentare vettori (1D), matrici (2D) e tensori (N-dimensionali), e Attraverso proprieta' come shape e dtype, garantisce che i dati siano organizzati e tipizzati in modo coerente.
+Un altro obbiettivo e' la semplificazione del codice rendendo il codice piu' leggibile e meno propenso a errori, senza l'utilizzo di innumerevoli loop come lo scrivere for, ad esempio il broadcasting permette invece di eseguire calcoli tra array di dimensioni diverse (seguendo regole precise), espandendo virtualmente l'elemento più piccolo.
+In ambito scientifico non e' solo un contenitori di dati ma un "vero laboratorio matematico" offre una libreria di strumenti pronti all'uso:
+Statistica: mean(), std(), median(), sum().
+Algebra Lineare: Calcolo di determinanti, matrici inverse e risoluzione di sistemi linearie  supporto per le Trasformate di Fourier (numpy). 
+Il suo obbiettivo e' fornire le fondamenta su cui poggiano campi avanzati come: Analisi di dati, modellazione scientifica e Machine Learning.
+
+
+
+.Quali sono le principali funzionalità di Pandas? Spiegale e fai un esempio
+Pandas e' lo strumento d'eccellenza per chiunque debba "torturare" i dati finche' non confessano qualcosa di utile. E una libreria Python specializzata nella manipolazione e analisi di tabelle numeriche e serie temporali.
+Ha due strutture fondamentali: come Series ovvero una struttura unidimensionale, e i DataFrame che sono una tabella bidimensionale (tipo foglio Excel o tabella SQL) dove ogni colonna puo' avere un tipo di dato diverso.
+Tra le sue principali funzionalita' troviamo: Caricamento e manipolazione dei dati in cui puo' leggere file CSV, Excel, database SQL e persino dizionari Python. Una volta caricati dei dati, ti permette di selezionare, filtrare e riorganizzare i dati con comandi semplicissimi, evitando di scrivere decine di righe di codice.
+Permette anche un'avanzata pulizia dei dati. Pandas offre strumenti per gestire i valori mancanti, rimuovere i duplicati e convertire i formati (es. trasformare una stringa in una data vera e propria).
+Puo' anche effettuare delle analisi e delle  Statistiche, e puoi ottenere immediatamente:
+Sommario statistico: Media, mediana, deviazione standard.
+Aggregazioni: Grazie alla tecnica GroupBy, puoi dividere i dati in gruppi, applicare una funzione (es. somma) e ricombinare i risultati.
+Pandas e' nato per la finanza, quindi e' fortissimo con le Serie Temporali (date, orari, medie mobili). Inoltre, "va d'accordo" con tutti: si integra perfettamente con Matplotlib per i grafici e SciPy per l'analisi scientifica.
+Tra le funzionalita' avanzate: Unione e Pivot
+Merge e Concat: Per unire due tabelle diverse (come un JOIN in SQL).
+Pivot Table: Per trasformare i dati da un formato "lungo" a uno "largo", rendendo i dati complessi molto più facili da leggere.
+
+
+Cosa cambia tra un Series / Data Frame e un Array? Perché abbiamo bisogno di queste strutture dati?
+La differenza fondamentale risiede nell'identita' e nella flessibilità dei dati ad esempio l'Array (NumPy) è una struttura omogenea e posizionale. Tutti gli elementi devono essere dello stesso tipo (es. tutti numeri) e puoi richiamarli solo attraverso la loro posizione numerica (indice 0, 1, 2...). E' come un blocco di marmo e  sono solidi, veloci per il calcolo matematico puro.
+Al contrario Series e DataFrame (Pandas) invece sono strutture etichettate ed eterogenee. Hanno nomi per le righe e per le colonne e possono contenere tipi di dati diversi contemporaneamente (numeri, testi, date). E' come un foglio Excel dinamico, flessibile e pronto per l'analisi.
+L'Array serve quando la priorita' e' l'eseguire calcoli complessi (algebra, statistiche pesanti) su milioni di numeri in modo istantaneo.
+Series e DataFrame servono quando la priorita' e' gestire tabelle reali dove le colonne hanno nomi (es. "Prezzo", "Data_Vendita"), dove mancano dei valori e dove devi unire informazioni provenienti da fonti diverse (CSV, SQL).
+In breve: l'Array e' il motore di calcolo, il DataFrame e' il centro di controllo dei dati.
+
+
+Cos'è la Visualizzazione dei dati a che cosa serve? Quali sono i suoi principali obbiettivi?
+E letteralmente la rappresentazione grafica delle informazioni. E serve a fornire dati chiari e precisi per supportare decisioni rapide e basate su fatti, e' usato durante l'analisi per "andare a caccia" di pattern nascosti, correlazioni tra variabili o anomalie che a occhio nudo, guardando solo una tabella, non vedresti mai e anche a "raccontare una storia"  e in generale serve a presentare risultati o sequenze di eventi in modo coinvolgente per chi guarda, l'obiettivo finale e' la chiarezza comunicativa.
+In Python, questo processo si affida principalmente a due "pesi massimi" come
+Matlotlib: La libreria di base, estremamente potente, configurabile e precisa. E' il "motore" che permette di costruire ogni singolo pezzo del grafico.
+Seaborn: Costruita sopra Matplotlib, e' la "stilista" del gruppo. Semplifica la creazione di grafici statistici eleganti e complessi, lavorando in simbiosi con i DataFrame di Pandas.
